@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./mixin";
+@import "./base";
+
+@import "./layout/header";
+@import "./layout/main"; 
+@import "./layout/carsListContainer"; 
+
+@import "./components/webInfo";
+@import "./components/slogan";
+@import "./components/brands";
+@import "./components/footer";
+@import "./components/carousel";
+@import "./components/design";
+@import "./components/technical-data";
+@import "./components/searcher";
+@import "./components/card-car";

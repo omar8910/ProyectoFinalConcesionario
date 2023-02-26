@@ -1,0 +1,54 @@
+/// Estilos globales
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/// Estilos html
+html{
+    font-size: 62.5%;
+    @include response(md){
+        font-size: 56.67%;
+    }
+
+    @include response(sm){
+        font-size: 50%;
+    }
+}
+
+///Estilos para las cabeceras
+h1,h2,h3,h4{
+    font-family: 'Dosis', sans-serif;
+}
+
+///Estilos para el h1
+h1{
+    font-size: font(h1);
+}
+
+///Estilos para los enlaces
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: color(deepBlue) !important;
+}
+
+///Estilos para el texto
+p,span{
+    font-size: font(span);
+}
+
+///Estilos para el boton
+.button{
+    @include button();
+}
+
+///Estilos para la etiqueta hr
+hr{
+    background-color: color(dark-gray);
+    margin: 0;
+    height: 5px;
+}

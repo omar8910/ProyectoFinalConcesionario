@@ -1,0 +1,32 @@
+///Componente slogan
+
+.slogan{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url("https://www.bmw.es/content/dam/bmw/marketES/bmw_es/Campanas/BMW30CSL/03-CSL.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1669218159669.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    &-content{
+        height: 100%;
+        backdrop-filter: blur(5px);
+        @include flexposition(column);
+        gap: 1em;
+        position: relative;
+        color: white;
+        text-align: center;
+        &-subtitle{
+            font-style: italic;
+        }
+    }
+}
+
+// Poner filtro al bg-img
+.slogan::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(0,0,0,.33);
+}

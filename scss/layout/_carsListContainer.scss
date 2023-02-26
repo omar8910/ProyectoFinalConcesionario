@@ -1,0 +1,14 @@
+//Layout carListContainer
+
+.carListContainer{
+    position: relative;
+    width: 100%;
+    @include flexposition(column,flex-start);
+
+    &-list{
+        @include flexposition(row);
+        flex-wrap: wrap;
+        width: 80%;
+        margin-top: 5%;
+    }
+}

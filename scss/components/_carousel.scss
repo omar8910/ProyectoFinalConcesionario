@@ -1,0 +1,110 @@
+///Componente carousel
+
+.container-car-information{
+      @include flexposition(row,center,flex-end);
+      height: 100%;
+      width: 100%;
+
+      .car-information{
+            position: absolute;
+            height: 100%;
+            width: 65%;
+            top: 0;
+            @include flexposition(column,flex-end,flex-start);
+
+            *{
+                  color: color(light);
+                  margin-bottom: 2%;
+                  margin-top: 2%;
+                  text-transform: uppercase;
+            }
+            
+            h1{
+                  font-size: 5rem;
+            }
+
+            
+            &-buttons{
+                  @include flexposition(column,center,flex-start);
+                  width: 30%;
+            }
+
+            &-data{
+                  margin-bottom: -2%;
+                  width: 100%;
+                  @include flexposition(row,flex-start);
+                  &-buttons{
+                        @include flexposition(column,center,flex-start);
+                  }
+
+                  &-child{
+                        margin: 5%;
+                        // margin-left: 0;
+                        background-color: rgba(0, 0, 0, 0.395);
+                        border-radius: 5px;
+                        padding: 1.5%;
+                        width: 50%;
+                        p{
+                              text-transform: uppercase;
+                        }
+                  }
+            }
+
+
+      }
+}
+
+@media screen and (max-width: 1200px) {
+      #carouselExample{
+            @include flexposition(column)
+      }
+      
+      .container-car-information{
+            width: 100% !important;
+            background-color: color(dark-gray);
+            
+            .car-information{
+                  position: relative !important;
+                  align-items: center;
+                  &-buttons{
+                        width: 40%;
+                  }
+            }
+      }
+
+}
+
+@media screen and (max-width: 800px) {
+      .container-car-information{
+            .car-information{
+                  &-buttons{
+                        width: 50%;
+                  }
+            }
+      }
+}
+
+@media screen and (max-width: 550px) {
+      .container-car-information{
+            .car-information{
+                  &-buttons{
+                        width: 60%;
+                  }
+
+                  &-data{
+                        @include flexposition(column,center,center);
+                        text-align:center;
+                  }
+            }
+      }
+}
+
+@media screen and (max-width: 400px) {
+      .container-car-information{
+            .car-information{
+                  &-buttons{
+                        width: 80%;
+                  }
+            }
+      }
+}

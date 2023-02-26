@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcas de coches</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <link rel="shortcut icon" href="img/118845971-icono-de-super-coche-de-concesionario-de-estilo-automático-con-silueta-de-icono-de-vehículo-removebg-preview (1).png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-md border-bottom border-dark">
+      <div class="container-fluid ps-4 pe-4 d-flex flex-row-reverse">
+        <a class="navbar-brand fs-3" href="index.html"><img class="logo_concesionario" src="img/118845971-icono-de-super-coche-de-concesionario-de-estilo-automático-con-silueta-de-icono-de-vehículo-removebg-preview (1).png" alt="Logo Concesionario"></a>
+        <button class="navbar-toggler border-dark border-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html#brands">Marcas de Coches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movilidad eléctrica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Propietario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main m-0">
+    <div class="carListContainer">
+      <div class="carListContainer-searcher">
+        <h1 class="carListContainer-searcher-title">ENCUENTRA TU COCHE</h1>
+        <form action="" class="carListContainer-searcher-form">
+          <select class="form-select carListContainer-searcher-form-select" aria-label="Default select example">
+            <option selected disabled>MARCA</option>
+            <option>BMW</option>
+            <option>Ferrari</option>
+            <option>Audi</option>
+            <option>Alfa Romeo</option>
+            <option>Ford</option>
+            <option>Porsche</option>
+            <option>Jaguar</option>
+            <option>Maserati</option>
+          </select>
+          <select class="form-select carListContainer-searcher-form-select" aria-label="Default select example">
+            <option selected disabled>MODELO</option>
+            <option>M</option>
+            <option>Serie 5</option>
+            <option>Serie 6</option>
+          </select>
+          <select class="form-select carListContainer-searcher-form-select" aria-label="Default select example">
+            <option selected disabled>CAMBIO</option>
+            <option>Automático</option>
+            <option>Manual</option>
+          </select>
+          <select class="form-select carListContainer-searcher-form-select" aria-label="Default select example">
+            <option selected disabled>COLOR</option>
+            <option>Rojo</option>
+            <option>Negro</option>
+            <option>Blanco</option>
+            <option>Gris</option>
+            <option>Verde</option>
+          </select>
+          <button class="carListContainer-searcher-form-btn">BUSCAR</button>
+        </form>
+      </div>
+
+      <div class="carListContainer-list">
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfXGPb10tLhu1XzWVo7puMLWFmdkAj5DOP7tFkZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gijhNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYVKwWh1DMztioCeqVYDafHL2jmztYRSFxy67aftxdIfMw1RSfWQorK%25VxdSeZLjtuzWQdjcyUh3aeZQ6KCvSXRjcZwBEpIrx6Kc%252Nr%254WwBKupkb8Fe%252B3inhOIjup2XH5D10UkNh5EWkVAbnkq8Ne3zOh5nmPklcagq857MjH0RUmP81D6BAxb7MPVYwfdWh1DMzt%25HAeqVYDafu4AjmztYRS3FZ67aftxdIicw1RSfWQovu%25VxdSeZ40GuzWQdjcFbX3aeZQ6KC2RXRjcZwBvgLrx6Kc%252yKe4WwBKupCouFe%252B3iKarIjup2XH5rcv63iprJ8OWGwgiEPyTpRBYnHZ0KEcw2FD4fXu1N"
+              alt="Imagen de coche BMX iX">
+            <div class="card-car-information">
+              <h2>Nuevo BMX iX</h2>
+              <p class="text-uppercase">eléctrico</p>
+              <p>Desde 87.150&euro;</p>
+            </div>
+          </div>
+        </a>
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfXG7y10tLhu1XzWVo7puMLWFmdkAj5DOP5tFkZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giAyNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYVpQWh1DMSkph5uqCVAbnkMLZACtEqhJ0yLkItJG8W6ABHvIL38BrEVLJdKX3IjEdwsbYBDS6j3a9DxiYAdnMRajm4n1c5FDyk7mag%25ybfgsnvLUgmlWv0PmgyXIslgpVXH5Llv63iplZh6KCbqXRjcZptARSGBb67aftZ8J7Mr6kRUmP8tEBUkw5z7sgNE89dsLxgsUilo9E4DiI15ascpF49%25nc3bC9ifZu%254Wyfj0UucPteW%25VvPa7cVfN8zVWhXNmUfKPoEqhVA6ogsuaNF9OAhJRFlEajou4TJAB7up9gaFe%252BJdUeZ4K2uzWQdBDszt%25HAeqVYDdniq8WwHzOh5nDycOEVxnqTMya6VNLB9uWCI5GavToU%25gXAsQR"
+              alt="Imagen de coche BMX iX M60">
+            <div class="card-car-information">
+              <h2>Nuevo BMX iX M60</h2>
+              <p class="text-uppercase">eléctrico</p>
+              <p>Desde 140.400&euro;</p>
+            </div>
+          </div>
+        </a>
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfQ9Pl10tLhu1XzWVo7puMLWFmdkAj5DOPitIqZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giUlNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYOMwWh1DMztrOweqVYDaf4gxjmztYRSG3Z67aftxd9Agw1RSfWQo4E%25VxdSeZLKruzWQdjcykp3aeZQ6KdvZXRjcZwBQ1Arx6Kc%252GOI4WwBKupUPCFe%252B3ioJOIjup2XH5Glv63iprJtxrGwXHi4Trd09%25rJH0Km%252%25ia4WsKokGpc1Q8CBsJdoSWZ35uMwjhL"
+              alt="Imagen de coche BMX i7">
+            <div class="card-car-information">
+              <h2>Nuevo BMX i7</h2>
+              <p class="text-uppercase">eléctrico</p>
+              <p>Desde 139.350&euro;</p>
+            </div>
+          </div>
+        </a>
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6J7P10tLhu1XzWVo7puMLWFmdkAj5DOP4tpFZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74g37WNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYpTWWh1DMztr9JeqVYDaf4RLjmztYRSGxw67aftxd9fMw1RSfWQopD%25VxdSeZLibuzWQdjcyH73aeZQ6KdZ1XRjcZwBQ2Vrx6Kc%252Gqz4WwBKup97IFe%252B3ibVcIjup2XHhDMv63iprJkCwGwXHi4TnxY9%25rJHFlMNmou4TJIsD8XL3FlTv0YPmyXIslGAtQbCrv0s9Ol89E4GA0ogsPfNF9OALU0MOkIogOybADQnvLUgChOrA5GybUEqg4k89ChbNmtfNPoEqhk7fSnMLNmqn1Sd9Dyk7m5VdQCYCn178zQZJtE5V1PaZ3LfN8zVMRcXQSkPazDxKy3dnMRaYWBIyQ5DxRte2JyZ8YWxfj0WucPteWS6l%25MKMfjedwOSxBDFjTgH%25ekxh06FXRTaDWZbQmStyl"
+              alt="Imagen de coche BMX i4">
+            <div class="card-car-information">
+              <h2>Nuevo BMX i4</h2>
+              <p class="text-uppercase">eléctrico</p>
+              <p>Desde 57.100&euro;</p>
+            </div>
+          </div>
+        </a>
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6JZg10tLhu1XzWVo7puMLWFmdkAj5DOP5tpFZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gtZLNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYXw9Wh1DMztr9JeqVYDaf4RLjmztYRSG3O67aftxd9WMw1RSfWQoeu%25VxdSeZLdYuzWQdjcyUR3aeZQ6KChrXRjcZwBETSrx6Kc%252Nl74WwBKupksaFe%252B3iKovIjup2XHBpxv63iprJ2TWGwXHi4TCze9%25rJHFlERLou4TJIsFfpL3FlTv0ISUyXIslGAvdCCrv0s9OGJJE4GA0og9QNNF9OALUxWpkIogOybWu0nvLUgChe2B5GybUEqjpI89ChbNm6iCPoEqhk7ZSLMLNmqn1cI9Dyk7m5VpQ%25YCn178zieptE5V1PaH2kfN8zVMRJpuSkPazDxTA6dnMRaYWz2YQ5DxRteapDZ8YWxfjRiscPteWS6xHeKMfjedwWJOBDS6jQ%25e5W2Ydw6Zuj8KptQ%25wc3lscifZu%25KXs0BHSc3uBr0AtJdKX324AOQTQBrXpFOgVlZ24riIgkSscpF4HvUnO0KiIFJGbdkABHvIT9hMdO2JGvloqVdgpT9GsLmzbUilo90yWc0bHsLoACRN4hJPLzj1EoKG%25xyPnvzIJ9gwO30lda"
+              alt="Imagen de coche BMX i4 M50">
+            <div class="card-car-information">
+              <h2>Nuevo BMX i4 M50</h2>
+              <p class="text-uppercase">eléctrico</p>
+              <p>Desde 76.500&euro;</p>
+            </div>
+          </div>
+        </a>
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfGKDl10tLhu1XzWVo7puMLWFmdkAj5DOPHxV%25Z8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giUSNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYpnaWh1DMztIi8eqVYDaf4RLjmztYRSFX767aftxd9Xgw1RSfWQoeD%25VxdSeZLdYuzWQdjcyBa3aeZQ6KdIrXRjcZwB6Jdrx6Kc%252wwN4WsKokGpc1Q8CBfJdoSWZ35uMwjhL"
+              alt="Imagen de coche BMX i3">
+            <div class="card-car-information">
+              <h2>Nuevo BMX i3</h2>
+              <p class="text-uppercase">eléctrico</p>
+              <p>Desde 40.700&euro;</p>
+            </div>
+          </div>
+        </a>
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6JiN10tLhu1XzWVo7puMLWFmdkAj5DOPMtExZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gSZWNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYpzsWh1DMzti08eqVYDafHLojmztYRSJyR67aftxdIXCw1RSfWQvC0%25VxdSeZGheuzWQdjc9ef3aeZQ6KCInXRjcZwBEnmrx6Kc%252Nu74WwBKupk3IFe%252B3in2ZIjup2XH5psv63iprJ8V%25GwXHi4TPBA9%25rJHFlM2oou4TJIsDxgL3FlTv0YWCyXIslGAtqHCrv0s9Ofm6E4GA0ogS73NF9OALUdMRkIogOybQfsnvLUgChZS95GybUEqcdx89ChbNmKizPoEqhk7bqvMLNmqn1hrJDyk7m5VqQ5YCn178zmZntE5V1Pa7cVfN8zVMR1L7SkPazDxVytdnMRaYWB2YQ5DxRte2OVZ8YWxfjpyKcPteWS6iHdKMfjedwHJUBDS6jQ%25J9k2Ydw6ZuTyoptQ%25wc3lO5ifZu%25KXsgJHSc3uBr0W0JdKX324BVwTQBrXpF2zllZ24riIpuuscpF4Hvia00KiIFJGzHlABHvIT9Te1O2kvmRhoId4eVGkCrmX2FsWl6JiY7"
+              alt="Imagen de coche BMX iX3">
+            <div class="card-car-information">
+              <h2>Nuevo BMX iX3</h2>
+              <p class="text-uppercase">eléctrico</p>
+              <p>Desde 74.00&euro;</p>
+            </div>
+          </div>
+        </a>
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfvKix10tLhu1XzWVo7puMLWFmdkAj5DOPEtIkZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74g37WNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYps5Wh1DMztio9eqVYDaf4gRjmztYRSGxw67aftxd9L%25w1RSfWQogB%25VxdSeZL3buzWQdjcyX73aeZQ6KCogXRjcZwBELWrx6Kc%252Z9y4WwBKup9maFe%252B3ioLXIjup2XHLyWv63iprJXKKGwgiEPyTpRBYnHg0KEcw2FD4fXu1N"
+              alt="Imagen de coche BMX iX1">
+            <div class="card-car-information">
+              <h2>Nuevo BMX iX1</h2>
+              <p class="text-uppercase">eléctrico</p>
+              <p>Desde 56.400&euro;</p>
+            </div>
+          </div>
+        </a>
+        <a href="single-car.html">
+          <div class="card-car">
+            <img class="img-fluid card-car-image"
+              src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfQnPz10tLhu1XzWVo7puMLWFmdkAj5DOP7tFJZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gijPNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYVfFWh1DMzti08eqVYDafH6UjmztYRSJwL67aftxdTCyw1RSfWQlEW%25VxdSeZsNluzWQdjc9Fk3aeZQ6KownXRjcZwBL%25mrx6Kc%252yV34WwBKupCV1Fe%252B3inXZIjup2XH5rzv63iprJ849GwXHi4TPl29%25rJHFlMaxou4TJIsDA4L3FlTv0YLHyXIslGAtydCrv0s9OfwTE4GA0ogSkcNF9OALUdn%25kIogOybQ5mnvLUgChZS95GybUEqcdx89ChbNmKizPoEqhk7b1DMLNmqn1hdnDyk7m5VqQ7YCn178zmZetE5V1Pa7oDfN8zVMRcxSSkPazDxKBYdnMRaYWB2NQ5DxRte2pAZ8YWxfjpIBcPteWS6ivnKMfjedwHuXBDS6jQ%25JLn2Ydw6ZuTAnptQ%25wc3lOHifZu%25KXcagHS9uAqsr%25P61U39IjAeSw27BzcQkO"
+              alt="Imagen de coche BMW XM">
+            <div class="card-car-information">
+              <h2>Nuevo BMW XM</h2>
+              <p class="text-uppercase">híbrido enchufable</p>
+              <p>Desde 177.000&euro;</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer p-5" id="footer">
+    <ul class="nav justify-content-center border-bottom pb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+      <li class="nav-item"><a href="index.html#brands" class="nav-link px-2 text-light">Marcas de Coches</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contacta con nosotros</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About us</a></li>
+    </ul>
+    <p class="text-center text-light mt-4">Concesionario BMW  - OMAR ©</p>
+  </footer>
+</body>
+
+</html>

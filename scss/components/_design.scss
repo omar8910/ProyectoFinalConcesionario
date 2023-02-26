@@ -1,0 +1,28 @@
+///Componente design
+
+.design{
+      background-color: color(light);
+
+      @include flexposition(column);
+
+      &-tittle{
+            @include tittle();
+      }
+
+
+      &-colors{
+            @include flexposition(row,center);
+            flex-wrap: wrap;
+            
+            *{
+                  padding: 1%;
+                  margin: 1%;
+            }
+
+            img{
+                  &:hover{
+                        border: 1px solid black;
+                  }
+            }
+      }
+}

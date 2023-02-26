@@ -1,0 +1,48 @@
+/// Componente technical-data
+
+.technical-data{
+      margin-bottom: 5%;
+      &-tittle{
+            @include tittle();
+            margin-bottom: 3%;
+      }
+
+      &-information{
+            width: 100%;
+            @include flexposition(row,flex-start);
+
+            &>:nth-child(1){
+                  width: 50%;
+                  margin-right: 3%;
+            }
+
+            &-content{
+                  width: 90%;
+            }
+
+            &-content>*{
+                  padding-top: 2%;
+                  padding-bottom: 2%;
+                  @include flexposition(row,space-between);
+            }
+      }
+}
+
+@media screen and (max-width: 990px) {
+      .technical-data{
+            &-information{
+                  @include flexposition(column);
+            }
+      }
+}
+
+@media screen and (max-width: 768px){
+      .design-tittle{
+            align-self: center;
+            text-align: center;
+      }
+      .technical-data-tittle{
+            align-self: center;
+            text-align: center;
+      }
+}

@@ -1,0 +1,46 @@
+/// Componente web-info
+
+.webInfo{
+    width: 100%;
+    padding: 0 15em 4em 15em;
+    margin: 0 auto;
+    background-color: white;
+    @include flexposition(column);
+    &-title{
+        margin: 1em;
+    }
+    &-content{
+        @include flexposition();
+        gap: 2em;
+        &-text{
+            flex-basis: 50%;
+            line-height: 2em;
+            font-size: 1.7rem;
+        }
+        &-img{
+            flex-basis: 50%;
+        }
+    }
+}
+@media screen and (max-width: 950px) {
+    .webInfo{
+        padding: 0 5em 5em 5em;
+        &-content{
+            flex-direction: column;
+            gap: 0;
+            &-text{
+                flex-basis: 100%;
+            }
+            &-img{
+                flex-basis: 100%;
+            }
+        }
+    }
+    .webInfo-content{
+        gap: 2em;
+    }
+    .webInfo-title{
+        text-align: center;
+    }
+
+}

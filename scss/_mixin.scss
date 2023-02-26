@@ -1,0 +1,61 @@
+@mixin response($breakpoint){
+    @if($breakpoint == xl){
+        @media(max-width: 1200px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == lg){
+        @media(max-width: 992px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == md){
+        @media(max-width: 768px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == sm){
+        @media(max-width: 576px){
+            @content;
+        }
+    }
+}
+
+/// Mixin para posicionar con flex
+/// @example
+/// .carListContainer{
+///     @include flexposition(column,flex-start);
+/// }
+/// @parameter {string} $direction [row] -valor para direction
+/// @parameter {string} $justifycontent [center] -valor para justify-content
+/// @parameter {string} $alignitem [center] -valor para align-items
+@mixin flexposition($direction:row, $justifycontent:center, $alignitem:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifycontent;
+    align-items: $alignitem;
+}
+
+/// Mixin para los estilos de los botones
+/// @example
+/// .button{
+///     @include button();
+/// }
+@mixin button{
+    width: 100%;
+    padding: 5%;
+    font-size: 2rem;
+}
+
+/// Mixin para los estilos de los titulos
+/// @example
+/// .button{
+///     @include button();
+/// }
+@mixin tittle{
+    margin-top: 5%;
+    align-self: flex-start;
+}

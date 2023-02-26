@@ -1,0 +1,9 @@
+//Componente card-car
+
+.card-car{
+      &-information{
+            p:nth-child(2){
+                  color: color("blue");
+            }
+      }
+}

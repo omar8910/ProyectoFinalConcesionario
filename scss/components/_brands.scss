@@ -1,0 +1,34 @@
+/// Componente brands
+
+.brands{
+    background-color: white;
+    @include flexposition(column);
+    &-title{
+        color: black;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    &-content{
+        width: 100%;
+        @include flexposition(row);
+        flex-wrap: wrap;
+        &-brandCard{
+            width: 20vw;
+            height: 20vw;
+            &-img{
+                width: inherit;
+            }
+            &-img:hover{
+                cursor: pointer;
+                transition: all .5s ease;
+                scale: 1.1;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .brands-content-brandCard{
+        width: 35vw;
+        height: 35vw;
+    }
+}

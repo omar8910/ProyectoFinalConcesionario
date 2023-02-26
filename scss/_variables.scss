@@ -1,0 +1,39 @@
+/// Proyecto: Buking.com
+/// @author Omar 
+
+/// Fuentes importadas de Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap');
+
+/// Lista de colores
+/// @group colores
+$colors:(
+    "dark-gray": #333333,
+    "silver": #C0C0C0,
+    "rojo": #FF0000,
+    "deepBlue": #003366,
+    "light": white,
+    "blue": #1c69d4,
+);
+
+/// Lista de fuentes
+/// @group fuentes
+$fonts:(
+    "h1":3em,
+    'span': 2em,
+);
+
+/// Función que devuelve un color de la lista $colors
+/// @group colores
+/// @param {string} $color - nombre del color de la lista $colors
+/// @return {color} - color en hexadecimal
+@function color($color){
+    @return map-get($colors, $color)
+};
+
+/// Función que devuelve una fuente de la lista $fonts
+/// @group fuentes
+/// @param {string} $font - nombre de la fuente de la lista $fonts
+/// @return {font} - fuente
+@function font($font){
+    @return map-get($fonts, $font)
+};
